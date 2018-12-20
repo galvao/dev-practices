@@ -20,9 +20,10 @@ Always use [Semantic Versioning](http://semver.org)
 
 <a name="framework"></a>2. Framework
 ------------
-[Zend Framework 2](http://framework.zend.com/)
+[Zend Framework 3](http://framework.zend.com/)
 
   1. Routes:
+  
     1. Naming in english, entity + '-' + action: user-authenticate, product-list
     1. Common actions: 
       * register (insert)
@@ -35,9 +36,11 @@ Always use [Semantic Versioning](http://semver.org)
 --------
 
   1. Modelling: Always in english.
+  
     1. Suggested tool: [SQL Power Architect](http://www.sqlpower.ca/page/architect)
     1. Rules:
       1. Entities: Name, singular: user, account, profile
       1. Primary Key: id
       1. Foreign Key: origin_entity_name + "_id": user_id, account_id, profile_id
       1. M:N Entities: first_entity_name + "_" + second_entity_name, alphabetically: resource_role, category_product
+      1. Self-relationships: The FK should be named, literally, "parent_id"

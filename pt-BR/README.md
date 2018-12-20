@@ -20,9 +20,10 @@ Sempre utilizar [Versionamento Semântico](http://semver.org)
 
 <a name="framework"></a>2. Framework
 ------------
-[Zend Framework 2](http://framework.zend.com/)
+[Zend Framework 3](http://framework.zend.com/)
 
   1. Rotas:
+  
     1. Nomenclatura: em inglês, entidade + '-' + ação: user-authenticate, product-list
     1. Ações comuns: 
       * register (insert)
@@ -36,8 +37,10 @@ Sempre utilizar [Versionamento Semântico](http://semver.org)
 
   1. Modelagem: sempre em inglês.
     1. Ferramenta sugerida: [SQL Power Architect](http://www.sqlpower.ca/page/architect)
+    
     1. Regras:
       1. Entidades: Nome, no singular: user, account, profile
       1. Chave Primária: id
       1. Chave Estrangeira: nome_entidade_origem + "_id": user_id, account_id, profile_id
       1. Entidades M:N: nome_entidade_1 + "_" + nome_entidade_2, alfabeticamente: resource_role, category_product
+      1. Auto-relacionamento: neste cado a FK deve ser nomeada literalmente como "parent_id"
